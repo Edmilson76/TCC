@@ -33,5 +33,5 @@ function popularTabela(listaAluno){
         linha.appendChild(preco)
      
     }
-    _
+    
 }
