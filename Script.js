@@ -6,7 +6,7 @@ botao.addEventListener('click', function() {
 
 })
 
-fetch('127.0.0.1:5000/todos')
+fetch('http//127.0.0.1:5000/todos')
     .then(function(resposta) {
         return resposta.json()
     }).then(function(ListaAluno)
