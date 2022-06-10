@@ -20,8 +20,6 @@ consulta = """CREATE TABLE Iphone (
 
 cursor.execute(consulta)
 
-consulta = "INSERT INTO Iphone VALUES(?, ?, ?, ?, )"
-
 conexao.commit()
 conexao.close()
 
