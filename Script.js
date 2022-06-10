@@ -1,23 +1,25 @@
 const botao = document.querySelector("#botao");
-const tabela = document.querySelector("#tabela-aluno");
+const tabela = document.querySelector("#tabela-iphone");
 
 botao.addEventListener('click', function() {
     carregarDados();
 
 })
 
+function carregarDados() {
 fetch('http//127.0.0.1:5000/todos')
     .then(function(resposta) {
         return resposta.json()
-    }).then(function(ListaAluno)
-    {  console.log(ListaAluno);
+    }).then(function(ListaAluno) {
+        popularTabela(ListaAluno);
     })
-
+}
 function popularTabela(listaAluno){
     const tamanhoLista = listaAluno.length;
     
     for(let index = 0; index < tamanhoLista; index++) {
         console.log(listaAluno[index]);
+        const linha =document.createElement('tr')
         const id = document.createElement('td'); 
         const Modelo = document.createElement('td'); 
         const Capacidade = document.createElement('td'); 
@@ -31,6 +33,8 @@ function popularTabela(listaAluno){
         linha.appendChild(Modelo);
         linha.appendChild(Capacidade);
         linha.appendChild(preco)
+
+        tabela. appendChild(linha);
      
     }
     
