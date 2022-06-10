@@ -22,10 +22,10 @@ function popularTabela(listaAluno){
         const Modelo = document.createElement('td'); 
         const Capacidade = document.createElement('td'); 
         const preco = document.createElement('td'); 
-        id.innerHTML = listaAluno[index[0]];
-        Modelo.innerHTML = listaAluno[index[1]];
-        Capacidade.innerHTML = listaAluno[index[2]];
-        preco.innerHTML = listaAluno[index[3]];
+        id.innerHTML = listaAluno[index][0];
+        Modelo.innerHTML = listaAluno[index][1];
+        Capacidade.innerHTML = listaAluno[index][2];
+        preco.innerHTML = listaAluno[index][3];
         
         linha.appendChild(id);
         linha.appendChild(Modelo);
