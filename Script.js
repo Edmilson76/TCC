@@ -3,7 +3,6 @@ const tabela = document.querySelector("#tabela-aluno");
 
 botao.addEventListener('click', function() {
     carregarDados();
-
 })
 
 function carregarDados() {
@@ -19,7 +18,7 @@ function popularTabela(listaAluno){
     
     for(let index = 0; index < tamanhoLista; index++) {
         console.log(listaAluno[index]);
-        const linha =document.createElement('tr')
+        const linha =document.createElement('tr');
         const id = document.createElement('td'); 
         const Modelo = document.createElement('td'); 
         const Capacidade = document.createElement('td'); 
