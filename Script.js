@@ -1,5 +1,5 @@
 const botao = document.querySelector("#botao");
-const tabela = document.querySelector("#tabela-iphone");
+const tabela = document.querySelector("#tabela-aluno");
 
 botao.addEventListener('click', function() {
     carregarDados();
