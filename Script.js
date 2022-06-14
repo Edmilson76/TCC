@@ -6,23 +6,6 @@ botao.addEventListener('click', function() {
 })
 
 function carregarDados() {
-<<<<<<< HEAD
-    fetch('http://127.0.0.1:5000/todos')
-    .then(function(resposta) {
-        return resposta.json();
-    })
-    .then(function(ListaIphone) {
-      popularTabela(ListaIphone);
-       
-    })
-}
-function popularTabela(listaIphone){
-    const tamanhoLista = listaIphone.length;
-    
-    for(let index = 0; index < tamanhoLista; index++) {
-        const linha = document.createElement('tr');
-
-=======
 fetch('http//127.0.0.1:5000/todos')
     .then(function(resposta) {
         return resposta.json()
@@ -36,36 +19,22 @@ function popularTabela(listaAluno){
     for(let index = 0; index < tamanhoLista; index++) {
         console.log(listaAluno[index]);
         const linha =document.createElement('tr');
->>>>>>> 97b67cd244c464ffb36eeee6a327d66ac6c6654a
         const id = document.createElement('td'); 
         const Modelo = document.createElement('td'); 
         const Capacidade = document.createElement('td'); 
         const preco = document.createElement('td'); 
-<<<<<<< HEAD
-
-        id.innerHTML = listaIphone[index][0];
-        Modelo.innerHTML = listaIphone[index][1];
-        Capacidade.innerHTML = listaIphone[index][2];
-        preco.innerHTML = listaIphone[index][3];
-=======
         id.innerHTML = listaAluno[index][0];
         Modelo.innerHTML = listaAluno[index][1];
         Capacidade.innerHTML = listaAluno[index][2];
         preco.innerHTML = listaAluno[index][3];
->>>>>>> 97b67cd244c464ffb36eeee6a327d66ac6c6654a
         
         linha.appendChild(id); 
         linha.appendChild(Modelo);
         linha.appendChild(Capacidade);
-<<<<<<< HEAD
-        linha.appendChild(preco);    
-        tabela.appendChild(linha);
-=======
         linha.appendChild(preco)
 
         tabela. appendChild(linha);
      
->>>>>>> 97b67cd244c464ffb36eeee6a327d66ac6c6654a
     }
     
 }
