@@ -7,7 +7,7 @@ cur = con.cursor()
 iphone = [
     (None, 'Iphone11', '128GB',5500 ),
     (None, 'Iphone12', '128GB',6000),
-    (None, 'Iphone13', '256GB', 10.200)
+    (None, 'Iphone13', '256GB', 10200)
 ]
 cur.executemany("INSERT INTO Iphone VALUES (?, ?, ?, ?)", iphone)
 
