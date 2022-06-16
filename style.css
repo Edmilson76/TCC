@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+#botao {
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: red;
+    font-family: Arial;
+    font-size: 25px;
+}
+
+#p1 {
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #CCCCCC;
+    font-family: Arial;
+    padding: 30px;
+    font-size: 45px;
+}
+
+#p2 {
+    font-size: 30px;
+    font-family: Arial;
+    text-decoration: underline;
+}
+
+#tabela-iphone {
+    font-size: 22px;
+    margin: 0 auto;
+}
+
+table, th, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: red;
+    align-items: center;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #2e618b;
+    align-items: center;
+}
+
+table tr:hover td {
+    background-color: #CCCCCC;
+    color: white;
+    transform: scale(1.1);
+    
+}
+
+
+
